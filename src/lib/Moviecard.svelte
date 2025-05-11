@@ -5,10 +5,10 @@
   <div class="card h-100">
     <img src={movie.poster} class="card-img-top" alt={movie.title} />
     <div class="card-body">
-      <h5 class="card-title">{movie.title}</h5>
+      <a href={`/movies/${movie._id}`} class="card-title">{movie.title}</a>
       <p class="card-text">
         Erscheinungsjahr: {movie.year}<br />
-        Dauer: {movie.length}
+        Dauer: {movie.duration}
       </p>
     </div>
   </div>
